@@ -25,7 +25,7 @@ p{margin:0 0 12px}
 .site-header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.85);
   backdrop-filter:saturate(160%) blur(8px); border-bottom:1px solid var(--border)}
 .nav{height:68px; display:flex; align-items:center; justify-content:space-between}
-.brand__img{height:42px; width:auto; display:block}
+.brand__img{height:60px; width:auto; display:block}
 #menu{display:flex; gap:18px; align-items:center}
 #menu a{color:var(--ink); text-decoration:none; font-weight:600; opacity:.85}
 #menu a:hover{opacity:1}
@@ -43,7 +43,7 @@ p{margin:0 0 12px}
 .hero__text .lead{font-size:18px; color:#2a2f36; opacity:.92; margin-bottom:16px}
 .hero__art{background:#fff; border:1px solid var(--border); border-radius:18px; box-shadow:var(--shadow);
   display:flex; align-items:center; justify-content:center; padding:12px}
-.hero__logo{height:120px; width:auto}
+.hero__logo{height:200px; width:auto}
 
 .value__grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px}
 .value__item{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px; box-shadow:var(--shadow)}
