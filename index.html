@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Интегро — усиливаем бизнес с помощью ИИ</title>
+  <meta name="description" content="Интегро — агентство искусственного интеллекта. Внедряем ИИ, автоматизируем процессы и растим прибыль бизнеса.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Интегро — на главную">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2l8.66 5v10L12 22l-8.66-5V7L12 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <circle cx="12" cy="12" r="3.5" fill="currentColor"/>
+        </svg>
+        <span>Интегро</span>
+      </a>
+      <button class="menu-toggle" aria-label="Открыть меню" onclick="toggleMenu()">☰</button>
+      <nav id="menu">
+        <a href="#services">Услуги</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#process">Процесс</a>
+        <a href="#about">О нас</a>
+        <a href="#contact" class="btn btn--small">Связаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero__content">
+        <h1>Усиливаем ваш бизнес с&nbsp;помощью&nbsp;ИИ</h1>
+        <p class="lead">Интегро — партнёр по внедрению ИИ: автоматизируем операции, повышаем конверсию и ускоряем принятие решений. Без лишней сложности — только измеримый результат.</p>
+        <div class="cta">
+          <a href="#contact" class="btn">Запросить консультацию</a>
+          <a href="#services" class="link">Посмотреть услуги</a>
+        </div>
+        <ul class="trust">
+          <li>🔒 Конфиденциальность</li>
+          <li>📈 KPI‑ориентированно</li>
+          <li>⚙️ Интеграция под ваши процессы</li>
+        </ul>
+      </div>
+      <div class="hero__card" role="img" aria-label="Примеры KPI от внедрения ИИ">
+        <div class="kpi">
+          <div>
+            <strong>−35%</strong>
+            <span>затраты на рутину</span>
+          </div>
+          <div>
+            <strong>+18%</strong>
+            <span>рост конверсии</span>
+          </div>
+          <div>
+            <strong>×3</strong>
+            <span>скорость отчётов</span>
+          </div>
+        </div>
+        <small class="note">Показатели — примеры типичных результатов проектов.</small>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2>Что делаем</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>AI‑автоматизация</h3>
+          <p>Обрабатываем заявки, готовим отчёты, отвечаем на типовые запросы. Экономим время и деньги.</p>
+          <ul class="bullets">
+            <li>чат‑боты и ассистенты</li>
+            <li>обработка документов</li>
+            <li>RPA + LLM‑интеграции</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Аналитика и ML</h3>
+          <p>Прогнозируем спрос, сегментируем клиентов, считаем LTV. Решения — на данных.</p>
+          <ul class="bullets">
+            <li>прогнозные модели</li>
+            <li>персонализация</li>
+            <li>маркетинговая атрибуция</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Внедрение под ключ</h3>
+          <p>От аудита и пайплайна данных до запуска и обучения команды. Работаем по KPI.</p>
+          <ul class="bullets">
+            <li>аудит и роадмап</li>
+            <li>PoC → пилот → прод</li>
+            <li>обучение и поддержка</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="section container">
+      <h2>Кейсы и эффекты</h2>
+      <div class="grid-3">
+        <div class="case">
+          <span class="badge">e‑commerce</span>
+          <p><strong>Ассистент для поддержки</strong> сократил среднее время ответа с 6 до 1,8 мин; удержание ↑ на 7%.</p>
+        </div>
+        <div class="case">
+          <span class="badge">fintech</span>
+          <p><strong>Автоотчёты для продаж</strong> снизили ручной труд на 40% и ускорили принятие решений.</p>
+        </div>
+        <div class="case">
+          <span class="badge">b2b</span>
+          <p><strong>Скоринг лидов</strong> дал +15% к SQL и повысил точность прогноза на 22 п.п.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section container">
+      <h2>Как работаем</h2>
+      <ol class="steps">
+        <li><strong>Диагностика</strong> — 60‑мин интервью, определяем задачи и KPI.</li>
+        <li><strong>PoC</strong> — быстрый прототип за 1–3 недели, считаем эффект.</li>
+        <li><strong>Пилот</strong> — интеграция в процессы, метрики в отчёте.</li>
+        <li><strong>Прод</strong> — обучение команды, поддержка, масштабирование.</li>
+      </ol>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>О нас</h2>
+      <p>Мы — Integro. Соединяем бизнес‑логику и инженерный подход: берём ответственность за результат, а не за «технологии ради технологий». Работаем конфиденциально, строим решения, которыми удобно пользоваться.</p>
+    </section>
+
+    <section id="contact" class="section container contact">
+      <h2>Связаться</h2>
+      <p>Напиши нам — и мы предложим лучший первый шаг под твои задачи.</p>
+      <div class="contact__grid">
+        <a class="btn btn--full" href="mailto:hello@integro.ai">hello@integro.ai</a>
+        <a class="btn btn--ghost btn--full" href="https://t.me/your_telegram" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn--ghost btn--full" href="https://calendly.com/" target="_blank" rel="noopener">Назначить звонок</a>
+      </div>
+      <p class="muted">*Замените ссылки на свои: e‑mail, Telegram и календарь.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>© <span id="year"></span> Интегро</div>
+      <div class="muted">ИИ‑агентство для роста бизнеса</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
