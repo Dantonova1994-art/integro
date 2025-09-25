@@ -1,7 +1,2 @@
-# INTEGRO — сайт
-Новая версия сайта в светло‑серой палитре с фиолетовыми акцентами.
-
-## Публикация на GitHub Pages
-1. Загрузите файлы в репозиторий.
-2. В настройках включите GitHub Pages из ветки main (/root).
-3. Откройте адрес: https://USERNAME.github.io/REPO/
+INTEGRO refined site — light gray + violet accents.
+Upload all files to repo root and enable GitHub Pages.

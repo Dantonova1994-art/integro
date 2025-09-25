@@ -3,101 +3,174 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>INTEGRO — ИИ‑внедрения для бизнеса</title>
-  <meta name="description" content="INTEGRO: внедряем ИИ‑решения, автоматизируем процессы и увеличиваем прибыль. Премиальный подход, KPI‑ориентированность.">
-  <meta name="theme-color" content="#5E3DB3">
-
+  <title>INTEGRO — ИИ‑внедрения для роста бизнеса</title>
+  <meta name="description" content="INTEGRO помогает компаниям внедрять ИИ: автоматизация, аналитика, пилоты и продакшн. Премиальный подход, измеримый результат.">
+  <meta name="color-scheme" content="light only">
+  <meta name="theme-color" content="#6A4DFF">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="#top">INTEGRO</a>
+      <a class="brand" href="#top" aria-label="INTEGRO">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="g" cx="50%" cy="40%" r="70%">
+                <stop offset="0%" stop-color="#8F7BFF"/>
+                <stop offset="50%" stop-color="#6A4DFF"/>
+                <stop offset="100%" stop-color="#4B2FE0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="32" cy="32" r="28" fill="url(#g)"/>
+            <g fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2">
+              <path d="M6,28 C22,10 42,10 58,28" />
+              <path d="M6,36 C22,54 42,54 58,36" />
+              <path d="M12,18 C24,30 40,34 52,46" opacity="0.7"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand__word">INTEGRO</span>
+      </a>
       <button class="menu-toggle" aria-label="Открыть меню" onclick="toggleMenu()">☰</button>
       <nav id="menu">
+        <a href="#value">Почему мы</a>
         <a href="#services">Услуги</a>
         <a href="#cases">Кейсы</a>
         <a href="#process">Процесс</a>
-        <a href="#faq">FAQ</a>
         <a href="#contact" class="btn btn--small">Связаться</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero container">
-      <div class="hero__content">
-        <h1>ИИ‑внедрения, которые работают на результат</h1>
-        <p class="lead">Мы создаём умные решения, которые экономят время, снижают затраты и увеличивают прибыль. Минимализм, премиум и технологии.</p>
-        <div class="cta">
-          <a href="#contact" class="btn">Запросить аудит</a>
-          <a href="#services" class="link">Подробнее</a>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>ИИ‑внедрения, которые увеличивают прибыль</h1>
+          <p class="lead">Мы соединяем данные, процессы и модели, чтобы ваш бизнес принимал решения быстрее и зарабатывал больше. Минимум шума — максимум результата.</p>
+          <div class="cta">
+            <a href="#contact" class="btn">Запросить аудит</a>
+            <a href="#services" class="link">Посмотреть услуги</a>
+          </div>
+          <ul class="bullets">
+            <li>⚙️ Интеграция в текущий стек</li>
+            <li>📈 KPI‑ориентированный подход</li>
+            <li>🔒 Конфиденциальность</li>
+          </ul>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="g2" cx="55%" cy="35%" r="60%">
+                <stop offset="0%" stop-color="#B6A8FF" />
+                <stop offset="70%" stop-color="#6A4DFF" />
+                <stop offset="100%" stop-color="#5A40E8" />
+              </radialGradient>
+              <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="white" stop-opacity="0.0"/>
+                <stop offset="1" stop-color="white" stop-opacity="1.0"/>
+              </linearGradient>
+            </defs>
+            <circle cx="260" cy="200" r="140" fill="url(#g2)" opacity="0.9"/>
+            <g fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2">
+              <ellipse cx="260" cy="200" rx="180" ry="80"/>
+              <ellipse cx="260" cy="200" rx="140" ry="110" transform="rotate(20,260,200)"/>
+              <ellipse cx="260" cy="200" rx="140" ry="110" transform="rotate(-20,260,200)"/>
+            </g>
+            <rect x="0" y="300" width="520" height="120" fill="url(#fade)"/>
+          </svg>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section container">
-      <h2>Услуги</h2>
-      <div class="grid-3">
-        <div class="card">
-          <h3>AI‑автоматизация</h3>
-          <p>Снижаем рутину и повышаем эффективность процессов.</p>
-        </div>
-        <div class="card">
-          <h3>Аналитика и ML</h3>
-          <p>Прогнозируем спрос, улучшаем конверсии и стратегические решения.</p>
-        </div>
-        <div class="card">
-          <h3>Внедрение под ключ</h3>
-          <p>От аудита до продакшна — всё под ваши KPI.</p>
+    <section id="value" class="section section--alt">
+      <div class="container value__grid">
+        <div class="value__item"><h3>Чёткий результат</h3><p>Согласуем KPI до старта проекта и защищаем их на данных.</p></div>
+        <div class="value__item"><h3>Быстрые пилоты</h3><p>PoC за 1–3 недели — чтобы вы увидели эффект до масштабирования.</p></div>
+        <div class="value__item"><h3>Интеграция без боли</h3><p>Работаем с вашим стеком и командой, обучаем и поддерживаем.</p></div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Услуги</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>AI‑автоматизация</h3>
+            <p>Ассистенты, обработка документов, RPA + LLM. Снижаем ручной труд и ускоряем операции.</p>
+          </article>
+          <article class="card">
+            <h3>Аналитика и ML</h3>
+            <p>Прогноз спроса, персонализация, оценка LTV и атрибуция. Решения — на данных.</p>
+          </article>
+          <article class="card">
+            <h3>Внедрение под ключ</h3>
+            <p>Аудит → PoC → пилот → прод. Фокус на метриках и удобстве команды.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="cases" class="section section--alt container">
-      <h2>Кейсы</h2>
-      <div class="grid-3">
-        <div class="case"><strong>−35%</strong><br>затраты на рутину</div>
-        <div class="case"><strong>+18%</strong><br>рост конверсии</div>
-        <div class="case"><strong>×3</strong><br>скорость отчётности</div>
+    <section id="cases" class="section section--alt">
+      <div class="container">
+        <h2>Кейсы</h2>
+        <div class="grid-3">
+          <div class="case"><strong>−35%</strong><span>затраты на рутину</span></div>
+          <div class="case"><strong>+18%</strong><span>рост конверсии</span></div>
+          <div class="case"><strong>×3</strong><span>скорость отчётности</span></div>
+        </div>
       </div>
     </section>
 
-    <section id="process" class="section container">
-      <h2>Как мы работаем</h2>
-      <ol class="steps">
-        <li>Диагностика — определяем цели и KPI.</li>
-        <li>PoC — быстрый прототип.</li>
-        <li>Пилот — внедрение в процессы.</li>
-        <li>Прод — масштабирование и поддержка.</li>
-      </ol>
-    </section>
-
-    <section id="faq" class="section section--alt container">
-      <h2>FAQ</h2>
-      <div class="faq">
-        <div class="faq-item"><strong>Сколько занимает внедрение?</strong><p>От 2 до 8 недель в зависимости от задачи.</p></div>
-        <div class="faq-item"><strong>Какие компании вы обслуживаете?</strong><p>Работаем с e‑commerce, fintech, B2B и другими отраслями.</p></div>
+    <section id="process" class="section">
+      <div class="container">
+        <h2>Как работаем</h2>
+        <div class="timeline">
+          <div class="step"><span>1</span><h4>Диагностика</h4><p>60‑мин интервью, задачи и KPI.</p></div>
+          <div class="step"><span>2</span><h4>PoC</h4><p>Прототип 1–3 недели, считаем эффект.</p></div>
+          <div class="step"><span>3</span><h4>Пилот</h4><p>Интеграция в процессы, отчёт по метрикам.</p></div>
+          <div class="step"><span>4</span><h4>Прод</h4><p>Обучение, поддержка, масштабирование.</p></div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section container">
-      <h2>Связаться</h2>
-      <p>Напишите нам, и мы предложим решение под ваши задачи.</p>
-      <a class="btn btn--full" href="mailto:hello@integro.ai">hello@integro.ai</a>
+    <section class="trustbar">
+      <div class="container trust__inner">
+        <span class="muted">Нам доверяют:</span>
+        <div class="logos">
+          <div class="logo-box">Логотип</div>
+          <div class="logo-box">Логотип</div>
+          <div class="logo-box">Логотип</div>
+          <div class="logo-box">Логотип</div>
+          <div class="logo-box">Логотип</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <h2>Связаться</h2>
+        <p>Напишите нам, и мы предложим лучший первый шаг под ваши задачи.</p>
+        <div class="contact__grid">
+          <a class="btn btn--full" href="mailto:hello@integro.ai">hello@integro.ai</a>
+          <a class="btn btn--ghost btn--full" href="https://t.me/your_telegram" target="_blank" rel="noopener">Telegram</a>
+        </div>
+        <p class="muted">Замените контакты на свои.</p>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer__grid">
-      <div>© 2025 INTEGRO</div>
-      <div class="muted">ИИ‑агентство для бизнеса</div>
+      <div class="brand-mini">
+        <span class="dot"></span> INTEGRO
+      </div>
+      <div class="muted">© 2025. ИИ‑агентство для бизнеса</div>
     </div>
   </footer>
 
