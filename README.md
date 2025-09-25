@@ -1,7 +1,7 @@
-# Интегро — одностраничный сайт
-Готовая бесплатная заготовка для GitHub Pages. Редактируй тексты в `index.html`, стили в `styles.css`.
+# INTEGRO — сайт
+Новая версия сайта в светло‑серой палитре с фиолетовыми акцентами.
 
 ## Публикация на GitHub Pages
-1. Залей файлы в репозиторий.
-2. Settings → Pages → Deploy from a branch → `main` и `/root` → Save.
-3. Открой выданный адрес вида `https://USERNAME.github.io/REPO/`.
+1. Загрузите файлы в репозиторий.
+2. В настройках включите GitHub Pages из ветки main (/root).
+3. Откройте адрес: https://USERNAME.github.io/REPO/
