@@ -1,1 +1,1 @@
-INTEGRO metallic theme site. Upload all files to repo root (GitHub Pages main/root).
+INTEGRO metallic theme with your provided logo. Upload all files to repo root.
